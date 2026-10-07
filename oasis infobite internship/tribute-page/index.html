@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Nikola Tesla — The Man Who Lit the World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+    <header class="hero" id="hero">
+        <div class="hero__particles" id="particles"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__pre-title" data-animate="fade-down">A Tribute To</p>
+            <h1 class="hero__title" data-animate="fade-up">
+                <span class="hero__title-line">Nikola</span>
+                <span class="hero__title-line hero__title-line--accent">Tesla</span>
+            </h1>
+            <p class="hero__tagline" data-animate="fade-up" data-delay="200">
+                "The man who invented the 20th century"
+            </p>
+            <div class="hero__scroll-indicator" data-animate="fade-up" data-delay="400">
+                <span>Scroll to explore</span>
+                <div class="hero__scroll-arrow"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar__brand">⚡ Tesla Tribute</div>
+        <ul class="navbar__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#quote">Quote</a></li>
+        </ul>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- ═══════════════════ ABOUT / IMAGE SECTION ═══════════════════ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image-wrapper" data-animate="slide-right">
+                    <div class="about__image-frame">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/79/Tesla_circa_1890.jpeg"
+                            alt="Nikola Tesla, circa 1890 — Serbian-American inventor and electrical engineer"
+                            class="about__image"
+                            loading="lazy"
+                        >
+                        <div class="about__image-border"></div>
+                    </div>
+                    <div class="about__image-caption">Nikola Tesla, circa 1890</div>
+                </div>
+                <div class="about__info" data-animate="slide-left">
+                    <h2 class="section-title">Who Was Tesla?</h2>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-count="300">0</span>
+                            <span class="about__stat-label">Patents Held</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-count="86">0</span>
+                            <span class="about__stat-label">Years of Life</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-count="26">0</span>
+                            <span class="about__stat-label">Countries with Patents</span>
+                        </div>
+                    </div>
+                    <p class="about__text">
+                        Born in a thunderstorm, destined to harness lightning — Nikola Tesla was a
+                        Serbian-American inventor, physicist, and futurist whose contributions to the
+                        design of the modern alternating current (AC) electrical system changed the
+                        course of human civilization forever.
+                    </p>
+                    <div class="about__details">
+                        <div class="about__detail">
+                            <span class="about__detail-label">Born</span>
+                            <span class="about__detail-value">10 July 1856, Smiljan, Croatia</span>
+                        </div>
+                        <div class="about__detail">
+                            <span class="about__detail-label">Died</span>
+                            <span class="about__detail-value">7 January 1943, New York City, USA</span>
+                        </div>
+                        <div class="about__detail">
+                            <span class="about__detail-label">Known For</span>
+                            <span class="about__detail-value">AC Power, Tesla Coil, Radio, Rotating Magnetic Field</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ BIOGRAPHY SECTION ═══════════════════ -->
+    <section class="biography" id="biography">
+        <div class="container">
+            <h2 class="section-title section-title--center" data-animate="fade-up">The Story of a Genius</h2>
+            <div class="biography__grid">
+
+                <article class="biography__card" data-animate="fade-up" data-delay="0">
+                    <div class="biography__card-icon">🌩️</div>
+                    <h3 class="biography__card-title">Early Life & Education</h3>
+                    <p class="biography__card-text">
+                        Nikola Tesla was born on July 10, 1856, during a fierce lightning storm in the
+                        village of Smiljan, which was then part of the Austrian Empire (modern-day Croatia).
+                        His father, Milutin Tesla, was a Serbian Orthodox priest, and his mother, Đuka Mandić,
+                        was an inventive homemaker who crafted small household tools. Even as a child, Tesla
+                        showed an extraordinary ability to visualize complex machinery entirely in his mind —
+                        he could design and test inventions mentally before ever putting pen to paper. He
+                        studied engineering at the Technical University of Graz and later attended the
+                        University of Prague, though he never formally graduated. His professors recognized
+                        a mind unlike any other, one that would soon reshape the world.
+                    </p>
+                </article>
+
+                <article class="biography__card" data-animate="fade-up" data-delay="100">
+                    <div class="biography__card-icon">⚡</div>
+                    <h3 class="biography__card-title">The War of Currents</h3>
+                    <p class="biography__card-text">
+                        In 1884, Tesla arrived in America with little more than a letter of recommendation
+                        addressed to Thomas Edison. He briefly worked for Edison, but the two clashed
+                        fundamentally — Edison championed direct current (DC), while Tesla believed
+                        alternating current (AC) was the future of electrical power. Their disagreement
+                        sparked the legendary "War of Currents," one of the fiercest technological rivalries
+                        in history. Tesla partnered with industrialist George Westinghouse, and together
+                        they demonstrated the superiority of AC power by illuminating the 1893 World's
+                        Columbian Exposition in Chicago and harnessing the power of Niagara Falls. It
+                        was AC, not DC, that became the global standard — a vindication of Tesla's vision
+                        that powers every home on Earth today.
+                    </p>
+                </article>
+
+                <article class="biography__card" data-animate="fade-up" data-delay="200">
+                    <div class="biography__card-icon">📡</div>
+                    <h3 class="biography__card-title">Inventions & Breakthroughs</h3>
+                    <p class="biography__card-text">
+                        Tesla's inventive output was staggering. He developed the Tesla coil, a resonant
+                        transformer circuit still used in radio technology today. He built one of the first
+                        hydroelectric power plants at Niagara Falls. He pioneered wireless communication —
+                        filing key radio patents before Marconi — and demonstrated a radio-controlled boat
+                        in 1898, essentially inventing remote control technology. He experimented with X-rays,
+                        contributed to the development of radar, and envisioned a world connected by wireless
+                        energy transmission. His Wardenclyffe Tower project on Long Island was meant to
+                        broadcast free wireless energy across the globe, but it was ultimately dismantled
+                        when funding collapsed. Many of his ideas were so far ahead of their time that the
+                        world simply wasn't ready for them.
+                    </p>
+                </article>
+
+                <article class="biography__card" data-animate="fade-up" data-delay="300">
+                    <div class="biography__card-icon">🕊️</div>
+                    <h3 class="biography__card-title">Later Years & Legacy</h3>
+                    <p class="biography__card-text">
+                        Despite his genius, Tesla spent his later years in relative poverty, living alone
+                        in a series of New York hotel rooms. He never married, devoting every ounce of
+                        his energy to his work. He fed pigeons in Bryant Park and continued to announce
+                        new inventions to the press, though many remained unrealized. Tesla died on
+                        January 7, 1943, at the age of 86 in Room 3327 of the New Yorker Hotel. After
+                        his death, the FBI seized his papers, fueling decades of conspiracy theories about
+                        suppressed inventions. Today, Tesla is recognized as one of the most brilliant
+                        minds in human history. The SI unit of magnetic flux density is named the "tesla"
+                        in his honor, and Elon Musk named his electric car company after him — a fitting
+                        tribute to the man who electrified the world.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ QUOTE SECTION ═══════════════════ -->
+    <section class="quote-section" id="quote">
+        <div class="container">
+            <div class="quote-block" data-animate="fade-up">
+                <div class="quote-block__glow"></div>
+                <div class="quote-block__icon">"</div>
+                <blockquote class="quote-block__text">
+                    The present is theirs; the future, for which I really worked, is mine.
+                </blockquote>
+                <cite class="quote-block__author">— Nikola Tesla</cite>
+                <div class="quote-block__decoration">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ TIMELINE SECTION ═══════════════════ -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <h2 class="section-title section-title--center" data-animate="fade-up">Life Timeline</h2>
+            <div class="timeline">
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1856</span>
+                        <h3 class="timeline__title">Born in Smiljan</h3>
+                        <p class="timeline__text">Born during a lightning storm in modern-day Croatia, then part of the Austrian Empire.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1875</span>
+                        <h3 class="timeline__title">Enrolled at Graz University</h3>
+                        <p class="timeline__text">Studied electrical engineering at the Technical University of Graz on a Military Frontier scholarship.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1882</span>
+                        <h3 class="timeline__title">Conceived the AC Motor</h3>
+                        <p class="timeline__text">While walking in Budapest, Tesla visualized the rotating magnetic field — the key to AC power.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1884</span>
+                        <h3 class="timeline__title">Arrived in America</h3>
+                        <p class="timeline__text">Emigrated to the United States with four cents and a letter of introduction to Thomas Edison.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1888</span>
+                        <h3 class="timeline__title">Partnership with Westinghouse</h3>
+                        <p class="timeline__text">Licensed his AC patents to George Westinghouse, igniting the War of Currents against Edison.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1891</span>
+                        <h3 class="timeline__title">Invented the Tesla Coil</h3>
+                        <p class="timeline__text">Developed the resonant transformer circuit, fundamental to radio technology and wireless transmission.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1893</span>
+                        <h3 class="timeline__title">Lit the World's Fair</h3>
+                        <p class="timeline__text">AC power illuminated the Chicago World's Columbian Exposition, proving its superiority over DC.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1895</span>
+                        <h3 class="timeline__title">Niagara Falls Power Plant</h3>
+                        <p class="timeline__text">Designed the first major hydroelectric power plant at Niagara Falls using his AC system.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1898</span>
+                        <h3 class="timeline__title">Radio-Controlled Boat</h3>
+                        <p class="timeline__text">Demonstrated remote control technology at Madison Square Garden — decades ahead of its time.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1901</span>
+                        <h3 class="timeline__title">Wardenclyffe Tower</h3>
+                        <p class="timeline__text">Began building his ambitious wireless energy transmission tower on Long Island, New York.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item" data-animate="timeline">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__year">1943</span>
+                        <h3 class="timeline__title">Passed Away in New York</h3>
+                        <p class="timeline__text">Died alone at age 86 in the New Yorker Hotel. His legacy continues to inspire millions worldwide.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ ACHIEVEMENTS SECTION ═══════════════════ -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title section-title--center" data-animate="fade-up">Key Achievements</h2>
+            <div class="achievements__grid">
+
+                <div class="achievement-card" data-animate="fade-up" data-delay="0">
+                    <div class="achievement-card__icon">🔌</div>
+                    <h3 class="achievement-card__title">AC Electrical System</h3>
+                    <p class="achievement-card__text">Designed the alternating current system that powers the entire modern world — from homes to industries.</p>
+                </div>
+
+                <div class="achievement-card" data-animate="fade-up" data-delay="100">
+                    <div class="achievement-card__icon">🌀</div>
+                    <h3 class="achievement-card__title">Tesla Coil</h3>
+                    <p class="achievement-card__text">Invented the resonant transformer circuit, which became foundational to radio, television, and wireless tech.</p>
+                </div>
+
+                <div class="achievement-card" data-animate="fade-up" data-delay="200">
+                    <div class="achievement-card__icon">📻</div>
+                    <h3 class="achievement-card__title">Radio Transmission</h3>
+                    <p class="achievement-card__text">Filed fundamental radio patents before Marconi. The U.S. Supreme Court upheld Tesla's radio patent in 1943.</p>
+                </div>
+
+                <div class="achievement-card" data-animate="fade-up" data-delay="300">
+                    <div class="achievement-card__icon">💧</div>
+                    <h3 class="achievement-card__title">Hydroelectric Power</h3>
+                    <p class="achievement-card__text">Engineered the first AC hydroelectric power plant at Niagara Falls, a landmark in energy history.</p>
+                </div>
+
+                <div class="achievement-card" data-animate="fade-up" data-delay="400">
+                    <div class="achievement-card__icon">🤖</div>
+                    <h3 class="achievement-card__title">Remote Control</h3>
+                    <p class="achievement-card__text">Demonstrated the first radio-controlled vessel in 1898, laying the groundwork for modern robotics.</p>
+                </div>
+
+                <div class="achievement-card" data-animate="fade-up" data-delay="500">
+                    <div class="achievement-card__icon">🌍</div>
+                    <h3 class="achievement-card__title">Wireless Energy Vision</h3>
+                    <p class="achievement-card__text">Envisioned global wireless energy transmission — a concept that modern wireless charging is finally realizing.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ SECOND QUOTE ═══════════════════ -->
+    <section class="quote-section quote-section--alt">
+        <div class="container">
+            <div class="quote-block quote-block--minimal" data-animate="fade-up">
+                <blockquote class="quote-block__text">
+                    If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.
+                </blockquote>
+                <cite class="quote-block__author">— Nikola Tesla</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">
+                    Learn more about this extraordinary genius on
+                    <a href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank" rel="noopener noreferrer">
+                        Wikipedia
+                    </a>
+                </p>
+                <p class="footer__credit">
+                    Made with ⚡ as a tribute to Nikola Tesla
+                </p>
+                <p class="footer__copyright">
+                    &copy; 2026 Tesla Tribute Page. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════ BACK TO TOP ═══════════════════ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
